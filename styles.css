@@ -6,6 +6,29 @@
   box-sizing: border-box;
 }
 
+.Header {
+  height: 100px;
+  background-color: #183457;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header h1 {
+  font-size: 38px;
+  font-family: "Poppins";
+  color: white;
+  font-weight: 200;
+} 
+
+@media screen and (max-width: 1280px) {
+
+  .Header h1 {
+    font-size: 14px;
+    
+  } 
+}
+
 #more1 {
   display: none;
 }
@@ -24,10 +47,6 @@
   color: green;
 }
 
-.Header {
-  height: 100px;
-  background-color: #183457;
-}
 
 .uniq-affilate {
   display: flex;
