@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#more1 {
+  display: none;
+}
+#more2 {
+  display: none;
+}
+#more3 {
+  display: none;
+}
+
+.desc-readmoreBtn{
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: "Poppins";
+  color: green;
+}
+
+.Header {
+  height: 100px;
+  background-color: #183457;
+}
+
+.uniq-affilate {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+
+.uniq-affilate-container {
+  width: 80%;
+}
+
+.uniq-aff-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.uniq-aff-info h1 {
+  font-size: 48px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #31324f;
+}
+
+.empty-div-inaff {
+  height: 5vh;
+}
+
+.uniq-aff-info-para {
+  padding: 0px 50px;
+  font-size: 15px;
+  color: #575757;
+  text-align: center;
+}
+
+/* LIVE JOBS */
+.uniq-jobs-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.uniq-job {
+  background-color: #18345741;
+  padding: 30px 30px;
+  margin-bottom: 20px;
+  margin: 0px 20px 20px 20px;
+  min-width: 250px;
+  border-radius: 5px;
+}
+
+.uniq-job-title {
+  color: #183457;
+}
+
+.uniq-job-exper {
+  font-size: 14px !important;
+}
+
+.uniq-job-desp {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.uniq-job-apply-btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  margin-top: 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #183457;
+  color: white;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.uniq-form-sec-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 80px;
+}
+
+.uniq-form-sec-title h1 {
+  text-transform: uppercase;
+  color: white;
+  color: #183457;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* Contact Forms */
+
+.uniq-contact-forms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Job Opening Form Container*/
+.uniq-jobs-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  padding-top: 50px;
+  border: 2px solid #1834571f;
+  border-radius: 15px;
+}
+
+/* Job Opening Form Container Header*/
+.uniq-jobs-form h1 {
+  text-transform: uppercase;
+  color: #31324f;
+  margin-bottom: 80px;
+}
+
+/* Job Opening Form Container form*/
+.uniq-jobs-form form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+/* Job Opening Form Container input, textarea*/
+.uniq-jobs-form form input,
+textarea {
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #31324f33;
+  margin-bottom: 10px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+input[type="file"]::file-selector-button {
+  border: none;
+
+  background-color: #183457;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 6px 20px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  border-radius: 5px;
+}
+
+/* Job Opening Form Container Button*/
+.uniq-jobs-form form button {
+  background-color: #183457;
+  color: white;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  margin-top: 55px;
+}
+
+@media screen and (max-width: 1280px) {
+  .uniq-affilate-container {
+    width: 90%;
+  }
+  .uniq-aff-info {
+    height: 100%;
+  }
+
+  .uniq-aff-info h1 {
+    font-size: 24px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .uniq-aff-info .empty-div-inaff {
+    height: 2vh;
+  }
+  .uniq-aff-info-para {
+    padding: 0px 1px;
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .uniq-jobs-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .uniq-job {
+    margin: 0px 0px 20px 0px;
+    padding: 30px 15px;
+  }
+  .uniq-job-desp {
+    font-size: 13px;
+  }
+
+  .uniq-contact-forms {
+    flex-direction: column;
+  }
+
+  .uniq-form-sec-title {
+    margin-bottom: 10px;
+  }
+
+  .uniq-jobs-form {
+    width: 100%;
+  }
+
+  .uniq-jobs-form form {
+    width: 90%;
+  }
+  .uniq-jobs-form h1 {
+    margin-bottom: 40px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .uniq-jobs-form form label {
+    font-size: 14px;
+  }
+
+  input[type="file"]::file-selector-button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
