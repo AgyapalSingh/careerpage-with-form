@@ -56,6 +56,29 @@ document
     };
   });
 
+  document.getElementById("file").addEventListener("change", function () {
+    const file = this.files[0]; // Get the selected file
+    const errorDiv = document.getElementById("file-error"); // Get the error message div
+  
+    if (file) {
+      const maxSize = 5 * 1024 * 1024; // 5MB in bytes
+  
+      if (file.size > maxSize) {
+        errorDiv.textContent = "File size should not exceed 5MB. Please select a smaller file.";
+        errorDiv.style.color = "red"; // Style the error message
+        this.value = ""; // Clear the file input
+
+        setTimeout(() => {
+          errorDiv.textContent = "";
+        }, 3000);
+      } else {
+        errorDiv.textContent = ""; // Clear error message if file is valid
+      }
+    }
+  });
+  
+  
+
 function myFunction1() {
   var dots = document.getElementById("dots1");
   var moreText = document.getElementById("more1");
@@ -104,3 +127,35 @@ function myFunction3() {
   }
 }
 
+// Get all "Apply" buttons
+document.querySelectorAll(".uniq-job-apply-btn").forEach((btn) => {
+  btn.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevents jumping due to anchor link
+
+    // Find the closest job container
+    let jobContainer = this.closest(".uniq-job");
+
+    // Get the job title
+    let jobTitle = jobContainer
+      .querySelector(".uniq-job-title")
+      .textContent.trim();
+
+    // Find the select dropdown
+    let jobSelect = document.getElementById("jobname");
+
+    // Find the matching option and select it
+    for (let option of jobSelect.options) {
+      if (option.textContent.trim() === jobTitle) {
+        option.selected = true;
+        break;
+      }
+    }
+
+    // Scroll to the form
+    document
+      .getElementById("Uniq-Form-Section")
+      .scrollIntoView({ behavior: "smooth" });
+    jobSelect.style.border = "3px solid #007bff"; // Highlights the dropdown
+    setTimeout(() => (jobSelect.style.border = ""), 6000); // Removes highlight after 2s
+  });
+});
