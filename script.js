@@ -156,6 +156,6 @@ document.querySelectorAll(".uniq-job-apply-btn").forEach((btn) => {
       .getElementById("Uniq-Form-Section")
       .scrollIntoView({ behavior: "smooth" });
     jobSelect.style.border = "3px solid #007bff"; // Highlights the dropdown
-    setTimeout(() => (jobSelect.style.border = ""), 6000); // Removes highlight after 2s
+    setTimeout(() => (jobSelect.style.border = ""), 2000); // Removes highlight after 2s
   });
 });
